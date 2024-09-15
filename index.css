@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d7d2fa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: mediumslateblue;
+}
+
+/*for bigger screens*/
+@media screen and (min-width: 750px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        h1{
+            padding: 1% 2%;
+        }
+        nav{
+            padding-right: 2%;
+        }
+        nav ul{
+            display: flex;
+            gap: 1.5rem;
+        }
+    }
+}
+
+/*for smaller screens*/
+@media screen and (max-width: 750px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        h1{
+            padding: 1% 2%;
+        }
+        nav{
+            padding-right: 2%;
+        }
+        nav ul{
+            display: flex;
+            gap: 1.5rem;
+        }
+    }
+}
+
+.title{
+    font-family: "Ibarra Real Nova", serif;
+    font-size: calc(1rem + 2rem);
+}
+
+nav a{
+    text-decoration: none;
+    color: mediumslateblue;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+nav ul{
+    list-style: none;
+    padding: 2%;
+}
+
+nav li{
+    .active{
+        color: black;
+    }
+}
+
+#page-wrapper {
+    height: 90vh;
+
+}
+
+.card{
+    background-color: #e9e8ff;
+    background-image: linear-gradient(#e9e8ff, #ededed);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    #card-title{
+        color: mediumslateblue;
+        padding: 2%;
+        font-size: calc(1rem + 1rem);
+    }
+    p{
+        padding: 0 4%;
+    }
+    padding: 1rem;
+    margin: 2rem;
+    height: 50vh;
+}
+
+#work-wrapper{
+    height: 90vh;
+    margin: 2% 10% 6% 6%;
+    h3{
+        text-align: center;
+    }
+}
+
+table th{
+    background-color: mediumslateblue;
+    color: white;
+}
+
+th, td{
+    padding: 1vw;
+}
+
+.table-wrapper{
+    margin: auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+
+
+.job-desc{
+    margin: 5%;
+    text-align: left;
+    a{
+        color: mediumslateblue;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+#projects{
+    text-align: center;
+    padding: 2rem;
+    height: 90vh;
+}
+
+#contact-page{
+    height: 80vh;
+}
+#contact-content{
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 5% 5%;
+    text-align: center;
+    a{
+        color: mediumslateblue;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#assignment-wrapper{
+    margin: 1rem;
+    min-height: 90vh;
+}
+
+.assignments-gallery{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 80vh;
+    padding-top: 1rem;
+    #temp{
+        text-align: center;
+        padding: 1.5rem;
+    }
+}
+
+.assignments-card{
+    background-color: #f2f0fd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1%;
+    padding: 1rem;
+
+    .desc{
+        padding: 1% 0;
+    }
+
+    .assignment-button{
+        background-color: #d7d2fa;
+        width: 8%;
+        padding: 1%;
+        border-radius: 10px;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 14px 0 rgba(0, 0, 0, 0.19);
+        a{
+            text-decoration: none;
+            color: mediumslateblue;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+footer{
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
